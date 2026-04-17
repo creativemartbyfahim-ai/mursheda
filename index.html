@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday 💖</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music/bg.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="bdayMusic">
+  <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HEART BACKGROUND -->
+<div class="hearts"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>🎂 শুভ জন্মদিন 🎂</h1>
+  <h3>My Dear Bestie 💖</h3>
+  <h2>মুর্শিদা আহমেদ 💕</h2>
+  <p>আপনি আমার লাইফের একজন স্পেশাল মানুষ 😌</p>
+
+  <button onclick="startExperience()">🎵 Start Surprise</button>
+</section>
+
+<!-- GIF -->
+<section class="avatar-section">
+  <div class="frame">
+    <img src="friend.gif" class="avatar">
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section class="message">
+  <p id="typing"></p>
+</section>
+
+<!-- FUNNY -->
+<section class="funny">
+  <p>😂 আপনি অনেক খেতে ভালোবাসেন 🍔</p>
+  <p>😴 আপনি একটু বেশি ঘুমান</p>
+  <p>🤡 কিন্তু আপনি আমার favourite</p>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <button onclick="finalSurprise()">🎁 Final Surprise</button>
+  <h3 id="finalText"></h3>
+</section>
+
+<!-- CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
